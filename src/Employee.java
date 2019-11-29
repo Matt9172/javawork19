@@ -91,17 +91,16 @@ public class Employee {
 
     public static void main (String[] args) {
         Employee jane = new Employee(123, "Jane Smith");
-        System.out.println(jane);
+        System.out.println("Creating an Employee ... " + jane);
         jane.setSalary(24000);
-        System.out.println(jane);
+        System.out.println("Setting Salary ... " + jane);
         jane.setManager("Barbara Forbes");
-        System.out.println(jane);
+        System.out.println("Setting Manager ... " + jane);
         jane.giveSalaryRaise(5);
-        System.out.println(jane);
-        jane.getSalary();
-        System.out.println(jane);
+        System.out.println("Giving Salary Raise ... " + jane);
+        System.out.println("Jane's Salary is £" + jane.getSalary());
         jane.setJobTitle("Senior Account Executive");
-        System.out.println(jane);
+        System.out.println("Setting Job Title ... " + jane);
         System.out.println(jane.parkingPermitStatus());
 
 
