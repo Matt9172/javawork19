@@ -27,10 +27,6 @@ public class DogShowScore {
     public static void main(String[] args) {
         Dog jeff = new Dog("Jeff", "German Shepard", "Colin Peterson");
         Dog frank = new Dog("Frank", "Golden Retriever", "John Smith");
-        jeff.getName();
-        jeff.getBreed();
-        jeff.getOwner();
-
 
         System.out.println("Dog 1 is: " + jeff.getName());
         System.out.println("Jeff is a: " + jeff.getBreed());
