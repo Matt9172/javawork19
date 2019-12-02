@@ -34,5 +34,14 @@ public class DogShowScore {
         System.out.println("Dog 2 is: " + frank.getName());
         System.out.println("Frank is a: " + frank.getBreed());
         System.out.println("Frank's owner is: " + frank.getOwner());
+        jeff.addScore(7);
+        jeff.addScore(9);
+        jeff.addScore(4);
+        frank.addScore(10);
+        frank.addScore(6);
+        frank.addScore(8);
+
+        System.out.println(jeff.getShowScore());
+        System.out.println(frank.getShowScore());
     }
 }
