@@ -27,21 +27,29 @@ public class DogShowScore {
     public static void main(String[] args) {
         Dog jeff = new Dog("Jeff", "German Shepard", "Colin Peterson");
         Dog frank = new Dog("Frank", "Golden Retriever", "John Smith");
+        DogShowScore jeff_score1 =new DogShowScore("1", 9);
+        DogShowScore jeff_score2 =new DogShowScore("2",7);
+        DogShowScore jeff_score3 =new DogShowScore("3",5);
+        DogShowScore frank_score1 =new DogShowScore("1", 8);
+        DogShowScore frank_score2 =new DogShowScore("2",10);
+        DogShowScore frank_score3 =new DogShowScore("3",6);
 
-        System.out.println("Dog 1 is: " + jeff.getName());
-        System.out.println("Jeff is a: " + jeff.getBreed());
-        System.out.println("Jeff's owner is: " + jeff.getOwner());
-        System.out.println("Dog 2 is: " + frank.getName());
-        System.out.println("Frank is a: " + frank.getBreed());
-        System.out.println("Frank's owner is: " + frank.getOwner());
-        jeff.addScore(7);
-        jeff.addScore(9);
-        jeff.addScore(4);
-        frank.addScore(10);
-        frank.addScore(6);
-        frank.addScore(8);
+        jeff.addScore(jeff_score1);
+        jeff.addScore(jeff_score2);
+        jeff.addScore(jeff_score3);
+        frank.addScore(frank_score1);
+        frank.addScore(frank_score2);
+        frank.addScore(frank_score3);
 
-        System.out.println(jeff.getShowScore());
-        System.out.println(frank.getShowScore());
+        System.out.println(jeff.getOwnerDetailsAsString());
+        System.out.println(frank.getOwnerDetailsAsString());
+        System.out.println("The number of events Jeff has entered is: " +jeff.getNumberOfEventsEntered ());
+        System.out.println("The number of events Frank has entered is: " +frank.getNumberOfEventsEntered());
+        System.out.println("Jeff's best event was: Event " +jeff.getBestEvent() + " | " + " He got a:" + jeff.getBestScore());
+        System.out.println("Franks best event was: Event " +frank.getBestEvent() + " | " + " He got a:" + frank.getBestScore());
+        System.out.println("Jeff's overall score was: " +jeff.getShowScore());
+        System.out.println("Franks overall score was: " +frank.getShowScore());
+        System.out.println("Frank has the best overall score, he is the winner!");
     }
+
 }
