@@ -43,8 +43,9 @@ public class CrackerPacker {
         this.wage = wage;
     }
 
-    public double finalWage(double salary) {
-        return numberOfBoxes*wage;
+    public double finalWage() {
+        return numberOfBoxes * wage;
+
     }
 
 
