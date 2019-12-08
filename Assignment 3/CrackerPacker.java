@@ -4,6 +4,12 @@ public class CrackerPacker {
  private int numberOfBoxes;
  private double wage;
 
+    public CrackerPacker(String name, int numberOfCrackers, int numberOfBoxes) {
+        this.name = name;
+        this.numberOfCrackers = numberOfCrackers;
+        this.numberOfBoxes = numberOfBoxes;
+    }
+
     public CrackerPacker(String name, int numberOfCrackers, int numberOfBoxes, double wage) {
         this.name = name;
         this.numberOfCrackers = numberOfCrackers;
@@ -47,6 +53,14 @@ public class CrackerPacker {
         return numberOfBoxes * wage;
 
     }
-
+    public double improvedFinalWage(){
+        if (numberOfBoxes <= 50){
+            wage = 1.11;
+        }
+        if (numberOfBoxes >50){
+            wage = 1.25;
+        }
+        return numberOfBoxes * wage;
+    }
 
 }
