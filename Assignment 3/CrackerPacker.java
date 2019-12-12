@@ -54,19 +54,14 @@ public class CrackerPacker {
 
     }
     public double improvedFinalWage(){
-        return wageUnder50() + wageOver50();
-    }
-    public double wageUnder50(){
-        while (numberOfBoxes <= 50) {
-            wage = 1.11;
+        if (numberOfBoxes >50) {
+            double fw = (50 * 1.11) + (numberOfBoxes - 50) * 1.25;
+            return fw;
         }
-        return numberOfBoxes * wage;
-    }
-    public double wageOver50() {
-        while (numberOfBoxes > 50) {
-            wage = 1.25;
+        else {
+            double fw = numberOfBoxes * 1.11;
+            return fw;
         }
-        return numberOfBoxes * wage;
     }
 
 }
