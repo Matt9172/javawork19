@@ -54,9 +54,9 @@ public class DogShowScore {
         System.out.println("Franks overall score was: " +frank.getShowScore());
 
         if(jeff.getShowScore()>frank.getShowScore())
-            System.out.println(jeff.getName()+ "is the winner of the dog show");
+            System.out.println(jeff.getName()+ " is the winner of the dog show!");
         else if(frank.getShowScore()>jeff.getShowScore())
-            System.out.println(frank.getName()+ "is the winner of the dog show");
+            System.out.println(frank.getName()+ " is the winner of the dog show!");
         else System.out.println("It's a Draw!");
 
     }

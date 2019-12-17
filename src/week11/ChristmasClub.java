@@ -20,7 +20,7 @@ public class ChristmasClub {
 
     public static void main(String[] args) {
         members = new ArrayList <> ();
-        members.add ("Gary", 27);
+
     }
 
 
