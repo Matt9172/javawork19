@@ -1,5 +1,5 @@
 package Assignment3;
-
+import java.util.ArrayList;
 public class CrackerPacker {
  private String name;
  private int numberOfCrackers;

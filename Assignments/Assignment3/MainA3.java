@@ -1,5 +1,5 @@
 package Assignment3;
-
+import java.util.ArrayList;
 
 import java.text.NumberFormat;
 import java.util.Locale;

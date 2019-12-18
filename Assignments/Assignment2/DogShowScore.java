@@ -43,9 +43,6 @@ public class DogShowScore {
         frank.addScore(frank_score2);
         frank.addScore(frank_score3);
 
-
-
-
         System.out.println(jeff.getOwnerDetailsAsString());
         System.out.println(frank.getOwnerDetailsAsString());
         System.out.println("The number of events Jeff has entered is: " +jeff.getNumberOfEventsEntered ());
