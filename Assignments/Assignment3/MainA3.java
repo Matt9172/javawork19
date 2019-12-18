@@ -1,6 +1,6 @@
-package Assignment3
+package Assignment3;
 
-3.MainA3
+
 import java.text.NumberFormat;
 import java.util.Locale;
 public class MainA3 {

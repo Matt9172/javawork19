@@ -43,6 +43,9 @@ public class DogShowScore {
         frank.addScore(frank_score2);
         frank.addScore(frank_score3);
 
+
+
+
         System.out.println(jeff.getOwnerDetailsAsString());
         System.out.println(frank.getOwnerDetailsAsString());
         System.out.println("The number of events Jeff has entered is: " +jeff.getNumberOfEventsEntered ());
@@ -51,7 +54,13 @@ public class DogShowScore {
         System.out.println("Franks best event was: Event " +frank.getBestEvent() + " | " + " He got a:" + frank.getBestScore());
         System.out.println("Jeff's overall score was: " +jeff.getShowScore());
         System.out.println("Franks overall score was: " +frank.getShowScore());
-        System.out.println("Frank has the best overall score, he is the winner!");
+
+        if(jeff.getShowScore()>frank.getShowScore())
+            System.out.println(jeff.getName()+ " is the winner of the dog show!");
+        else if(frank.getShowScore()>jeff.getShowScore())
+            System.out.println(frank.getName()+ " is the winner of the dog show!");
+        else System.out.println("It's a Draw!");
+
     }
 
 }
