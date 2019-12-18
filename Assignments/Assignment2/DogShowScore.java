@@ -1,3 +1,5 @@
+package Assignment2;
+
 public class DogShowScore {
 
     private String event;

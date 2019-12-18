@@ -1,3 +1,5 @@
+package Assignment3;
+
 public class CrackerPacker {
  private String name;
  private int numberOfCrackers;
