@@ -1,5 +1,5 @@
 package Assignment3;
-import java.util.ArrayList;
+
 public class CrackerPacker {
  private String name;
  private int numberOfCrackers;
@@ -51,10 +51,12 @@ public class CrackerPacker {
         this.wage = wage;
     }
 
-    public double finalWage() {
-        return numberOfBoxes * wage;
+    @Override
+    public String toString() {
+        return name + " has packed " + numberOfBoxes + " boxes. ";
 
     }
+
     public double improvedFinalWage(){
         if (numberOfBoxes >50) {
             double fw = (50 * 1.11) + (numberOfBoxes - 50) * 1.25;
@@ -65,5 +67,7 @@ public class CrackerPacker {
             return fw;
         }
     }
+
+
 
 }
