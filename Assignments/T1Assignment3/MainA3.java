@@ -1,4 +1,4 @@
-package Assignment3;
+package T1Assignment3;
 
 import java.text.NumberFormat;
 import java.util.Locale;

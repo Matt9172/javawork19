@@ -1,4 +1,4 @@
-package Assignment3;
+package T1Assignment3;
 
 public class CrackerPacker {
  private String name;
