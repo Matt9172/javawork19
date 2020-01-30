@@ -22,6 +22,7 @@ public class WeatherStation {
             String reading = in.nextLine();
             readings.add(reading + "c");
             System.out.println(readings);
+
             System.out.println(" The number of readings is: " + readings.size());
         }
 
