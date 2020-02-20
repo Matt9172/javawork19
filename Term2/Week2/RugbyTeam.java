@@ -6,13 +6,11 @@ public class RugbyTeam {
     private int lost;
     private int drawn;
     private int score;
-    private int against;
 
-    public RugbyTeam(String teamName, int won, int lost, int drawn) {
+
+    public RugbyTeam(String teamName) {
         this.teamName = teamName;
-        this.won = won;
-        this.lost = lost;
-        this.drawn = drawn;
+
 
     }
 
