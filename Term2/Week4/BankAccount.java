@@ -7,8 +7,12 @@ public class BankAccount {
     private String accountNumber;
     private String accountHolder;
     private double balance;
-    private boolean hasOverdraft;
 
+    public BankAccount(String accountNumber, String accountHolder, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
 
     public String getAccountNumber() {
         return accountNumber;
@@ -35,21 +39,12 @@ public class BankAccount {
     }
 
 
-    public double getBalance() {
+    public void getBalance() {
         return balance;
     }
 
     public void setBalance(double balance) {
         this.balance = balance;
-    }
-
-
-    public boolean isHasOverdraft() {
-        return hasOverdraft;
-    }
-
-    public void setHasOverdraft(boolean hasOverdraft) {
-        this.hasOverdraft = hasOverdraft;
     }
 
 

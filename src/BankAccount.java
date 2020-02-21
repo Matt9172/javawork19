@@ -5,8 +5,12 @@ public class BankAccount {
     private String accountNumber;
     private String accountHolder;
     private double balance;
-    private boolean hasOverdraft;
 
+    public BankAccount(String accountNumber, String accountHolder, double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+    }
 
     public String getAccountNumber() {
         return accountNumber;
@@ -43,15 +47,6 @@ public class BankAccount {
     }
 
 
-    public boolean isHasOverdraft() {
-        return hasOverdraft;
-    }
-
-    public void setHasOverdraft(boolean hasOverdraft) {
-        this.hasOverdraft = hasOverdraft;
-    }
-
-
     private boolean deposit(double amount){
         if (amount > 0.0){
             this.balance += amount;
@@ -71,7 +66,7 @@ public class BankAccount {
             return false;
         }
     }
-    private void addInterest(){
+    private void addInterest(double interestRate){
 
     }
 

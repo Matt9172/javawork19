@@ -1,10 +1,11 @@
 package Week4;
 
-public class YoungSaversAccount {
-    private String accountNumber;
-    private String accountHolder;
-    private double balance;
-    private boolean hasOverdraft;
+public class YoungSaversAccount extends BankAccount{
+
+    public YoungSaversAccount(String accountNumber, String accountHolder, double balance) {
+        super(accountNumber, accountHolder, balance);
+    }
 
 
+    }
 }
