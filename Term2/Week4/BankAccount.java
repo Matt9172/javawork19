@@ -39,7 +39,7 @@ public class BankAccount {
     }
 
 
-    public void getBalance() {
+    public double getBalance() {
         return balance;
     }
 
